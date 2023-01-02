@@ -1,0 +1,10 @@
+{
+    "manifest_version": 3,
+    "name": "Password Generator",
+    "description": "A random password generator",
+    "version": "1.0",
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "password_icon"
+    }
+}

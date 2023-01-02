@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            input[type="number"] {
+                display: block;
+                margin: 10px 0;
+            }
+            select {
+                display: block;
+                margin: 10px 0;
+            }
+            button {
+                display: block;
+                margin: 10px 0;
+            }
+            #password {
+                display: block;
+                margin: 10px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+           Length of password:
+           <input type="number" id="length" min="1" max="32" value="8">
+           
+           Password Specs:
+           <select id="character-set">
+            <option value="1">Alphabetic</option>
+            <option value="2">Alphanumeric</option>
+            <option value="3">Numeric</option>
+            <option value="4">Special Characters</option>
+           </select>
+
+           <button type="submit">Generate</button>
+        </form>
+        <div id="password"></div>
+        <button id="copy-button" style="display:none">Copy</button>
+    </body>
+    <script src="popup.js"></script>
+</html>
